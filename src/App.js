@@ -7,9 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const [print, setPrint] = useState([]);
   const pow = () => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts/1/comments")
-      .then((data) => {
+    axios.get("https://jsonplaceholder.typicode.com/posts/1/comments").then((data) => {
         console.log(data.data);
       });
   };
